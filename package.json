@@ -1,0 +1,30 @@
+{
+  "name": "compo",
+  "version": "0.1.0",
+  "description": "Compose a queue of functions",
+  "main": "Composer.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/curvedmark/compo.git"
+  },
+  "keywords": [
+    "compose",
+    "composer",
+    "queue",
+    "async"
+  ],
+  "author": "Glen Huang <curvedmark@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/curvedmark/compo/issues"
+  },
+  "devDependencies": {
+    "mocha": "1.x"
+  }
+}
