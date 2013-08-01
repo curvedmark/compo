@@ -19,14 +19,14 @@ Composer.prototype.run = function () {
 };
 
 Composer.prototype.runOne = function () {
-	if (this.pending || !this.queue.length) return;
+	if (this.running || !this.queue.length) return;
 	var fn = this.queue.shift();
 	var self = this;
 	push.call(this.args, function () {
-		self.pending = false;
+		self.running = false;
 		self.args = arguments;
 		self.runOne()
 	});
-	this.pending = true;
+	this.running = true;
 	fn.apply(undefined, this.args);
 };
